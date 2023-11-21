@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: ;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -12,22 +12,83 @@
     --negro: #000000;
     --azul: #2C3E50;
     --rojo: #ED6755;
+    --box-shadow-rojo: 0 5px 15px 0 #ed6755b6;
+    --box-shadow-azul: 0 5px 15px 0 #2c3e5094;
+    --box-shadow-blanco: 0 5px 15px 0 #ffffff80;
 }
 
 main {
+    width: 100vw;
+    height: 100vh;
     background: rgb(245, 245, 245);
+    gap: 1rem;
 }
 
 main, .pop-up {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .pop-up {
-    width: 432px;
-    height: 399px;
+    position: relative;
+    width: 300px;
+    height: 300px;
     background: var(--blanco);
     border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+    box-shadow: var(--box-shadow-blanco);
+}
+
+.pop-up__button-x {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+.pop-up__img1 {
+    width: 7rem;
+}
+
+.pop-up__img2 {
+    width: 3.8rem;
+}
+
+.pop-up p {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--negro);
+}
+
+.pop-up-2 p {
+    width: 60%;
+}
+
+.pop-up__button {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--blanco);
+    padding: .6rem 2rem;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.button-1 {
+    background: var(--rojo);
+    box-shadow: var(--box-shadow-rojo);
+}
+
+.button-2 {
+    background: var(--azul);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow-azul);
 }
