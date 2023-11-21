@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --azul: #2C3E50;
+    --rojo: #ED6755;
+}
+
+main {
+    background: rgb(245, 245, 245);
+}
+
+main, .pop-up {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pop-up {
+    width: 432px;
+    height: 399px;
+    background: var(--blanco);
+    border-radius: 1rem;
+}
