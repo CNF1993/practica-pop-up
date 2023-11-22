@@ -92,3 +92,17 @@ main, .pop-up {
     margin-top: 1rem;
     box-shadow: var(--box-shadow-azul);
 }
+
+.pop-up__button:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+}
+
+.pop-up__button:active {
+    transform: scale(1);
+}
+
+.pop-up__button-x:active {
+    transform: scale(.9);
+    color: #ED6755;
+}
